@@ -4,7 +4,11 @@ body {
 }
 
 h1 {
+    color: rgb(237, 202, 176);
     align-items: center;
+    background-color: rgb(65, 30, 5);
+    height: 15vh;
+    background: linear-gradient(to right, transparent 0%, rgb(65, 30, 5) 11%, rgb(65, 30, 5) 89%, transparent 100%);
 }
 
 h3 {
