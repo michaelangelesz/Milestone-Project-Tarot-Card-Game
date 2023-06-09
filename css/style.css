@@ -8,7 +8,7 @@ h1 {
     text-align: center;
     background-color: rgb(65, 30, 5);
     height: 11vh;
-    background: linear-gradient(to right, transparent 0%, rgb(65, 30, 5) 11%, rgb(65, 30, 5) 89%, transparent 100%);
+    background: linear-gradient(to right, transparent 0%, rgb(65, 30, 5) 5%, rgb(65, 30, 5) 95%, transparent 100%);
 }
 
 h3 {
