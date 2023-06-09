@@ -9,8 +9,14 @@ h1 {
     background-color: rgb(65, 30, 5);
     height: 11vh;
     background: linear-gradient(to right, transparent 0%, rgb(65, 30, 5) 5%, rgb(65, 30, 5) 95%, transparent 100%);
+    font-family: bouwsma_uncial;
 }
 
 h3 {
     text-align: center;
+}
+
+@font-face {
+    font-family: bouwsma_uncial;
+    src: url(../font/bouwsma_uncial/BouwsUnc.ttf);
 }
