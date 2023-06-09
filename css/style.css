@@ -1,6 +1,8 @@
 body {
     text-align: center;
     background-image: url('../images/background.jpg');
+    font-family: bouwsma_uncial;
+    justify-content: center;
 }
 
 h1 {
@@ -9,14 +11,18 @@ h1 {
     background-color: rgb(65, 30, 5);
     height: 11vh;
     background: linear-gradient(to right, transparent 0%, rgb(65, 30, 5) 5%, rgb(65, 30, 5) 95%, transparent 100%);
-    font-family: bouwsma_uncial;
+    justify-content: center;
+    display: flex;
+    width: 100%;
 }
 
 h3 {
     text-align: center;
+    justify-content: center;
+    display: flex;
 }
 
 @font-face {
     font-family: bouwsma_uncial;
-    src: url(../font/bouwsma_uncial/BouwsUnc.ttf);
+    src: url(../fonts/bouwsma_uncial/BouwsUnc.ttf);
 }
