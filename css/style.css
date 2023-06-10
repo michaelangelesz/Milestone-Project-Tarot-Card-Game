@@ -2,7 +2,6 @@ body {
     text-align: center;
     background-image: url('../images/background.jpg');
     font-family: bouwsma_uncial;
-    justify-content: center;
     height: 100vh;
     margin: 0;
 }
