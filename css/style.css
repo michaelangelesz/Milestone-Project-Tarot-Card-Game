@@ -37,11 +37,13 @@ h3 {
 
 section {
 display: flex;
+justify-content: center;
 padding-bottom: 22px;
 }
 
 main {
     display: flex;
+    justify-content: center;
 }
 
 .deck {
@@ -54,6 +56,11 @@ main {
     border-radius: 11px;
     margin-bottom: 22px
     flex: 1;
+    margin-right: -11.3em;
+}
+
+.deck:last-child {
+    margin-right: 0;
 }
 
 .card {
@@ -64,4 +71,5 @@ main {
     background-position: center;
     border: 4px solid whitesmoke;
     border-radius: 10px;
+    margin-right: 22px;
 }
