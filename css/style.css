@@ -36,24 +36,32 @@ h3 {
 }
 
 section {
-
+display: flex;
+padding-bottom: 22px;
 }
 
 main {
-
+    display: flex;
 }
 
 .deck {
     width: 180px;
     height: 300px;
     background-image: url('../images/backOfCard.jpg');
+    background-size: cover;
+    background-position: center;
     border: 4px solid whitesmoke;
-    border-radius: 10px;
+    border-radius: 11px;
+    margin-bottom: 22px
+    flex: 1;
 }
 
 .card {
     width: 180px;
     height: 300px;
     background-image: url('../images/backOfCard.jpg');
-    border: 4px;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
 }
