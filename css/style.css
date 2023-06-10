@@ -1,6 +1,8 @@
 body {
     text-align: center;
     background-image: url('../images/background.jpg');
+    background-position: center center;
+    background-size: cover;
     font-family: bouwsma_uncial;
     height: 100vh;
     margin: 0;
