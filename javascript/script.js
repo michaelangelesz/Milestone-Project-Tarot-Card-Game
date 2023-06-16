@@ -1,90 +1,24 @@
 const majorArcana = [
-  {
-    cardName: "The Fool",
-    cardImage: "images/majorArcana/0_theFool.jpg",
-  },
-  {
-    cardName: "The Magician",
-    cardImage: "images/majorArcana/1_theMagician.jpg",
-  },
-  {
-    cardName: "The High Priestess",
-    cardImage: "images/majorArcana/2_theHighPriestess.jpg",
-  },
-  {
-    cardName: "The Empress",
-    cardImage: "images/majorArcana/3_theEmpress.jpg",
-  },
-  {
-    cardName: "The Emperor",
-    cardImage: "images/majorArcana/4_theEmperor.jpg",
-  },
-  {
-    cardName: "The Hierophant",
-    cardImage: "images/majorArcana/5_theHierophant.jpg",
-  },
-  {
-    cardName: "The Lovers",
-    cardImage: "images/majorArcana/6_theLovers.jpg",
-  },
-  {
-    cardName: "The Chariot",
-    cardImage: "images/majorArcana/7_theChariot.jpg",
-  },
-  {
-    cardName: "Strength",
-    cardImage: "images/majorArcana/8_Strength.jpg",
-  },
-  {
-    cardName: "The Hermit",
-    cardImage: "images/majorArcana/9_theHermit.jpg",
-  },
-  {
-    cardName: "Wheel of Fortune",
-    cardImage: "images/majorArcana/10_wheelOfFortune.jpg",
-  },
-  {
-    cardName: "Justice",
-    cardImage: "images/majorArcana/11_Justice.jpg",
-  },
-  {
-    cardName: "The Hanged Man",
-    cardImage: "images/majorArcana/12_theHangedMan.jpg",
-  },
-  {
-    cardName: "Death",
-    cardImage: "images/majorArcana/13_Death.jpg",
-  },
-  {
-    cardName: "Temperance",
-    cardImage: "images/majorArcana/14_Temperance.jpg",
-  },
-  {
-    cardName: "The Devil",
-    cardImage: "images/majorArcana/15_theDevil.jpg",
-  },
-  {
-    cardName: "The Tower",
-    cardImage: "images/majorArcana/16_theTower.jpg",
-  },
-  {
-    cardName: "The Star",
-    cardImage: "images/majorArcana/17_theStar.jpg",
-  },
-  {
-    cardName: "The Moon",
-    cardImage: "images/majorArcana/18_theMoon.jpg",
-  },
-  {
-    cardName: "The Sun",
-    cardImage: "images/majorArcana/19_theSun.jpg",
-  },
-  {
-    cardName: "Judgment",
-    cardImage: "images/majorArcana/20_Judgment.jpg",
-  },
-  {
-    cardName: "The World",
-    cardImage: "images/majorArcana/21_theWorld.jpg",
-  },
+  { name: "The Fool", imgSrc: "images/majorArcana/0_theFool.jpg", },
+  { name: "The Magician", imgSrc: "images/majorArcana/1_theMagician.jpg", },
+  { name: "The High Priestess", imgSrc: "images/majorArcana/2_theHighPriestess.jpg", },
+  { name: "The Empress", imgSrc: "images/majorArcana/3_theEmpress.jpg", },
+  { name: "The Emperor", imgSrc: "images/majorArcana/4_theEmperor.jpg", },
+  { name: "The Hierophant", imgSrc: "images/majorArcana/5_theHierophant.jpg", },
+  { name: "The Lovers", imgSrc: "images/majorArcana/6_theLovers.jpg", },
+  { name: "The Chariot", imgSrc: "images/majorArcana/7_theChariot.jpg", },
+  { name: "Strength", imgSrc: "images/majorArcana/8_Strength.jpg", },
+  { name: "The Hermit", imgSrc: "images/majorArcana/9_theHermit.jpg", },
+  { name: "Wheel of Fortune", imgSrc: "images/majorArcana/10_wheelOfFortune.jpg", },
+  { name: "Justice", imgSrc: "images/majorArcana/11_Justice.jpg", },
+  { name: "The Hanged Man", imgSrc: "images/majorArcana/12_theHangedMan.jpg", },
+  { name: "Death", imgSrc: "images/majorArcana/13_Death.jpg", },
+  { name: "Temperance", imgSrc: "images/majorArcana/14_Temperance.jpg", },
+  { name: "The Devil", imgSrc: "images/majorArcana/15_theDevil.jpg", },
+  { name: "The Tower", imgSrc: "images/majorArcana/16_theTower.jpg", },
+  { name: "The Star", imgSrc: "images/majorArcana/17_theStar.jpg", },
+  { name: "The Moon", imgSrc: "images/majorArcana/18_theMoon.jpg", },
+  { name: "The Sun", imgSrc: "images/majorArcana/19_theSun.jpg", },
+  { name: "Judgment", imgSrc: "images/majorArcana/20_Judgment.jpg", },
+  { name: "The World", imgSrc: "images/majorArcana/21_theWorld.jpg", },
 ];
