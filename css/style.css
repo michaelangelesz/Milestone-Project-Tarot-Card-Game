@@ -14,7 +14,7 @@ h1 {
   color: rgb(237, 202, 176);
   text-align: center;
   background-color: rgb(66, 33, 9);
-  height: 22vh;
+  height: 7vh;
   background: linear-gradient(
     to right,
     transparent 0%,
@@ -58,8 +58,11 @@ section {
 }
 
 main {
-  display: flex;
-  justify-content: center;
+  display: grid;
+    grid-template-columns: repeat(6, 11rem);
+    grid-template-rows: repeat(4, 11rem);
+    grid-gap: 1rem;
+    perspective: 1000px;
 }
 
 .deck {
@@ -81,6 +84,12 @@ main {
 .card {
   width: 180px;
   height: 300px;
+  font-family: bouwsma_uncial;
+  font-size: 33px;
+  color: rgb(237, 202, 176);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/backOfCard.jpg");
   background-size: cover;
   background-position: center;
