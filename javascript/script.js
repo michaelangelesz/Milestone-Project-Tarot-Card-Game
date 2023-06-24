@@ -109,35 +109,40 @@ h1.appendChild(span);
 document.body.appendChild(h1);
 
 cards = [
-  { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique" },
-  { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique" },
-  { imgSrc: "../images2/bjork.jpeg", name: "bjork", alt: "Debut" },
-  { imgSrc: "../images2/bjork.jpeg", name: "bjork", alt: "Debut" },
-  { imgSrc: "../images2/cure.jpeg", name: "cure", alt: "Three Imaginary Boys" },
-  { imgSrc: "../images2/cure.jpeg", name: "cure", alt: "Three Imaginary Boys" },
-  { imgSrc: "../images2/doors.jpeg", name: "doors", alt: "Morrison Hotel" },
-  { imgSrc: "../images2/doors.jpeg", name: "doors", alt: "Morrison Hotel" },
-  { imgSrc: "../images2/floyd.jpeg", name: "floyd", alt: "Dark Side Of The Moon" },
-  { imgSrc: "../images2/floyd.jpeg", name: "floyd", alt: "Dark Side Of The Moon" },
-  { imgSrc: "../images2/jimi.jpeg", name: "jimi", alt: "Electric Ladyland" },
-  { imgSrc: "../images2/jimi.jpeg", name: "jimi", alt: "Electric Ladyland" },
-  { imgSrc: "../images2/lusciousj.jpeg", name: "lusciousj", alt: "Fever In Fever Out" },
-  { imgSrc: "../images2/lusciousj.jpeg", name: "lusciousj", alt: "Fever In Fever Out" },
-  { imgSrc: "../images2/madonna.jpeg", name: "madonna", alt: "Like A Virgin" },
-  { imgSrc: "../images2/madonna.jpeg", name: "madonna", alt: "Like A Virgin" },
-  { imgSrc: "../images2/marley.jpeg", name: "marley", alt: "Legend" },
-  { imgSrc: "../images2/marley.jpeg", name: "marley", alt: "Legend" },
-  { imgSrc: "../images2/redhot.jpeg", name: "redhot", alt: "One Hot Minute" },
-  { imgSrc: "../images2/redhot.jpeg", name: "redhot", alt: "One Hot Minute" },
-  { imgSrc: "../images2/tribe.jpeg", name: "tribe", alt: "The Low End Theory" },
-  { imgSrc: "../images2/tribe.jpeg", name: "tribe", alt: "The Low End Theory" },
-  { imgSrc: "../images2/u2.jpeg", name: "u2", alt: "The Joshua Tree" },
-  { imgSrc: "../images2/u2.jpeg", name: "u2", alt: "The Joshua Tree" },
+  { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique", "data-framework": "BBoys" },
+  { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique", "data-framework": "BBoys" },
+  { imgSrc: "../images2/bjork.jpeg", name: "bjork", alt: "Debut", "data-framework": "Björk" },
+  { imgSrc: "../images2/bjork.jpeg", name: "bjork", alt: "Debut", "data-framework": "Björk" },
+  { imgSrc: "../images2/cure.jpeg", name: "cure", alt: "Three Imaginary Boys", "data-framework": "theCure" },
+  { imgSrc: "../images2/cure.jpeg", name: "cure", alt: "Three Imaginary Boys", "data-framework": "theCure" },
+  { imgSrc: "../images2/doors.jpeg", name: "doors", alt: "Morrison Hotel", "data-framework": "theDoors" },
+  { imgSrc: "../images2/doors.jpeg", name: "doors", alt: "Morrison Hotel", "data-framework": "theDoors" },
+  { imgSrc: "../images2/floyd.jpeg", name: "floyd", alt: "Dark Side Of The Moon", "data-framework": "Floyd" },
+  { imgSrc: "../images2/floyd.jpeg", name: "floyd", alt: "Dark Side Of The Moon", "data-framework": "Floyd" },
+  { imgSrc: "../images2/jimi.jpeg", name: "jimi", alt: "Electric Ladyland", "data-framework": "Jimi" },
+  { imgSrc: "../images2/jimi.jpeg", name: "jimi", alt: "Electric Ladyland", "data-framework": "Jimi" },
+  { imgSrc: "../images2/lusciousj.jpeg", name: "lusciousj", alt: "Fever In Fever Out", "data-framework": "LusciousJ" },
+  { imgSrc: "../images2/lusciousj.jpeg", name: "lusciousj", alt: "Fever In Fever Out", "data-framework": "LusciousJ" },
+  { imgSrc: "../images2/madonna.jpeg", name: "madonna", alt: "Like A Virgin", "data-framework": "Madonna" },
+  { imgSrc: "../images2/madonna.jpeg", name: "madonna", alt: "Like A Virgin", "data-framework": "Madonna" },
+  { imgSrc: "../images2/marley.jpeg", name: "marley", alt: "Legend", "data-framework": "Bob" },
+  { imgSrc: "../images2/marley.jpeg", name: "marley", alt: "Legend", "data-framework": "Bob" },
+  { imgSrc: "../images2/redhot.jpeg", name: "redhot", alt: "One Hot Minute", "data-framework": "RHCP" },
+  { imgSrc: "../images2/redhot.jpeg", name: "redhot", alt: "One Hot Minute", "data-framework": "RHCP" },
+  { imgSrc: "../images2/tribe.jpeg", name: "tribe", alt: "The Low End Theory", "data-framework": "Tribe" },
+  { imgSrc: "../images2/tribe.jpeg", name: "tribe", alt: "The Low End Theory", "data-framework": "Tribe" },
+  { imgSrc: "../images2/u2.jpeg", name: "u2", alt: "The Joshua Tree", "data-framework": "U2" },
+  { imgSrc: "../images2/u2.jpeg", name: "u2", alt: "The Joshua Tree", "data-framework": "U2" },
 ];
 
 for (let i = 0; i < cards.length; i++) {
   const cardDiv = document.createElement("div");
   cardDiv.classList.add("card"); 
+  cardDiv.setAttribute("data-framework", cards[i]["data-framework"]);
+  cardDiv.innerHTML = `
+  <img class="front-face" src="${cards[i].imgSrc}" alt="${cards[i].alt}">
+  <img class="back-face" src="../images2/pink.jpeg" alt="card back">
+  `;
   main.appendChild(cardDiv);
 }
 
