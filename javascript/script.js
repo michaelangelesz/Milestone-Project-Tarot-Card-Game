@@ -162,7 +162,7 @@ const cards = [
 let flippedCards = [];
 
 // declare a variable to store the number of lives
-let lives = 16;
+let lives = 1;
 
 // select the span element and store it in a variable
 const livesCount = document.querySelector(".playerLivesCount");
@@ -201,7 +201,21 @@ for (let i = 0; i < cards.length; i++) {
         console.log("No match.");
         
         // Decrement the lives counter
-        lives--;
+        if (lives > 0) {
+          lives--;
+        }
+
+        // Check if the player has run out of lives
+if (lives === 0) {
+  // Display a message to the user
+  alert("Game over! You have run out of lives.");
+  
+  // Disable the click event on all cards
+  const cardElements = document.querySelectorAll(".memory-card");
+  cardElements.forEach(function(element) {
+    element.removeEventListener("click", flipCard);
+  });
+}
         
         // Update the lives element with the new number of lives
         livesCount.textContent = `Lives: ${lives}`;
@@ -252,7 +266,7 @@ document.body.appendChild(main);
 //   checkForMatch();
 // }
 
-let count = 0;
+// let count = 0;
 
 // function checkForMatch() {
 //   // ternary operator is if/else statement in one line
