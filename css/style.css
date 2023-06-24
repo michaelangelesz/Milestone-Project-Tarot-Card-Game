@@ -7,8 +7,8 @@
 body {
   height: 100vh;
   background: #74ebd5;
-  background: -webkit-linear-gradient(to right, #629cff, #02245f);
-  background: linear-gradient(to right, #629cff, #02245f);
+  background: -webkit-linear-gradient(to right, #629cff, #4f8fff);
+  background: linear-gradient(#b3cffd, #4f8fff);
   background-image: url("../images2/planet.png");
   display: flex;
   justify-content: center;
@@ -23,14 +23,14 @@ body {
 h1 {
   top: 2rem;
   position: fixed;
-  color: #e548b6;
+  color: #e87beb;
   text-align: center;
   font-size: 4rem;
   background: linear-gradient(
     to right,
     transparent 0%,
-    #02245f 3%,
-    #629cff 97%,
+    #022e7c 3%,
+    #4f8fff 97%,
     transparent 100%
   );
   width: 100%;
@@ -46,7 +46,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(6, 10rem);
   grid-template-rows: repeat(4, 10rem);
-  grid-gap: 1rem;
+  grid-gap: .5rem;
   justify-content: center;
   align-items: center;
   perspective: 1000px;
