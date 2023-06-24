@@ -8,8 +8,8 @@ body {
   height: 100vh;
   background: #74ebd5;
   background: -webkit-linear-gradient(to right, #629cff, #02245f);
-  background-image: url("../images2/planet.png");
   background: linear-gradient(to right, #629cff, #02245f);
+  background-image: url("../images2/planet.png");
   display: flex;
   justify-content: center;
   align-items: center;

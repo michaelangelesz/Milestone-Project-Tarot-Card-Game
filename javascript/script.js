@@ -2,10 +2,11 @@ const main = document.createElement("main");
 main.classList.add("memory-game");
 
 const h1 = document.createElement("h1");
-// const text1 = document.createTextNode("Lives: ");
+const text1 = document.createTextNode("Lives: ");
 const span = document.createElement("span");
 span.classList.add("playerLivesCount");
-// h1.appendChild(text1);
+span.textContent = "16";
+h1.appendChild(text1);
 h1.appendChild(span);
 
 // Add the h1 to the DOM
@@ -161,15 +162,6 @@ const cards = [
 // Create a new array to store the flipped cards
 let flippedCards = [];
 
-// declare a variable to store the number of lives
-let lives = 1;
-
-// select the span element and store it in a variable
-const livesCount = document.querySelector(".playerLivesCount");
-
-// update the span element with the number of lives
-livesCount.textContent = `Lives: ${lives}`;
-
 for (let i = cards.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
   [cards[i], cards[j]] = [cards[j], cards[i]];
@@ -199,30 +191,10 @@ for (let i = 0; i < cards.length; i++) {
       } else {
         // The cards do not match
         console.log("No match.");
-        
-        // Decrement the lives counter
-        if (lives > 0) {
-          lives--;
-        }
-
-        // Check if the player has run out of lives
-if (lives === 0) {
-  // Display a message to the user
-  alert("Game over! You have run out of lives.");
-  
-  // Disable the click event on all cards
-  const cardElements = document.querySelectorAll(".memory-card");
-  cardElements.forEach(function(element) {
-    element.removeEventListener("click", flipCard);
-  });
-}
-        
-        // Update the lives element with the new number of lives
-        livesCount.textContent = `Lives: ${lives}`;
         // Flip the cards back after a delay
-        setTimeout(function() {
+        setTimeout(function () {
           const flippedCardElements = document.querySelectorAll(".flip");
-          flippedCardElements.forEach(function(element) {
+          flippedCardElements.forEach(function (element) {
             element.classList.remove("flip");
           });
         }, 1000);
@@ -266,7 +238,7 @@ document.body.appendChild(main);
 //   checkForMatch();
 // }
 
-// let count = 0;
+let count = 0;
 
 // function checkForMatch() {
 //   // ternary operator is if/else statement in one line
