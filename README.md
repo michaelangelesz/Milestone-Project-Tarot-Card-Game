@@ -50,6 +50,8 @@ Gravillis, Kenny. Cover art for The Low End Theory album by A Tribe Called Quest
 Averill, Steve. Cover art for The Joshua Tree album by U2. 1987. Record label: Island.<br>
 [u2.jpeg image source](https://www.u2.com/music)
 
-[cassette.jpeg image source](https://pixabay.com/photos/announcer-audio-neon-cassette-316585/)
+cassette.jpeg sourced from [here](https://pixabay.com/photos/announcer-audio-neon-cassette-316585/)
 
-[vinyl.jpeg image source](https://pixabay.com/photos/vinyl-record-player-retro-album-6853859/)
+vinyl.jpeg sourced from [here](https://pixabay.com/photos/vinyl-record-player-retro-album-6853859/)
+
+aquamarine.jpeg sourced from [here](https://www.tumblr.com/pwlanier/694256499050037248/aquamarine-shigar-valley-gilgit-baltistan)
