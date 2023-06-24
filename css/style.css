@@ -46,7 +46,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(6, 10rem);
   grid-template-rows: repeat(4, 10rem);
-  grid-gap: 1rem; /* add spacing between the cards */
+  grid-gap: 1rem;
   justify-content: center;
   align-items: center;
   perspective: 1000px;
