@@ -2,11 +2,10 @@ const main = document.createElement("main");
 main.classList.add("memory-game");
 
 const h1 = document.createElement("h1");
-const text1 = document.createTextNode("Lives: ");
+// const text1 = document.createTextNode("Lives: ");
 const span = document.createElement("span");
 span.classList.add("playerLivesCount");
-span.textContent = "16";
-h1.appendChild(text1);
+// h1.appendChild(text1);
 h1.appendChild(span);
 
 // Add the h1 to the DOM
@@ -159,7 +158,17 @@ const cards = [
   },
 ];
 
+// Create a new array to store the flipped cards
 let flippedCards = [];
+
+// declare a variable to store the number of lives
+let lives = 16;
+
+// select the span element and store it in a variable
+const livesCount = document.querySelector(".playerLivesCount");
+
+// update the span element with the number of lives
+livesCount.textContent = `Lives: ${lives}`;
 
 for (let i = cards.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
@@ -190,6 +199,19 @@ for (let i = 0; i < cards.length; i++) {
       } else {
         // The cards do not match
         console.log("No match.");
+        
+        // Decrement the lives counter
+        lives--;
+        
+        // Update the lives element with the new number of lives
+        livesCount.textContent = `Lives: ${lives}`;
+        // Flip the cards back after a delay
+        setTimeout(function() {
+          const flippedCardElements = document.querySelectorAll(".flip");
+          flippedCardElements.forEach(function(element) {
+            element.classList.remove("flip");
+          });
+        }, 1000);
       }
 
       // Clear the array for the next pair of flipped cards
@@ -202,75 +224,75 @@ for (let i = 0; i < cards.length; i++) {
 
 document.body.appendChild(main);
 
-let intialFlip = false;
-let hasFlippedCard = false;
-let lockBoard = false;
-let firstCard, secondCard;
+// let intialFlip = false;
+// let hasFlippedCard = false;
+// let lockBoard = false;
+// let firstCard, secondCard;
 
-function flipCard() {
-  if (!intialFlip) {
-    intialFlip = true;
-  }
+// function flipCard() {
+//   if (!intialFlip) {
+//     intialFlip = true;
+//   }
 
-  // locks board so you can't click more than 2 cards at a time
-  if (lockBoard) return;
-  // prevents double clicking on the same card
-  if (this === firstCard) return;
-  this.classList.add("flip");
-  // first click
-  if (!hasFlippedCard) {
-    // first click
-    hasFlippedCard = true;
-    firstCard = this;
-    return;
-  }
+//   // locks board so you can't click more than 2 cards at a time
+//   if (lockBoard) return;
+//   // prevents double clicking on the same card
+//   if (this === firstCard) return;
+//   this.classList.add("flip");
+//   // first click
+//   if (!hasFlippedCard) {
+//     // first click
+//     hasFlippedCard = true;
+//     firstCard = this;
+//     return;
+//   }
 
-  // second click
-  secondCard = this;
-  checkForMatch();
-}
+//   // second click
+//   secondCard = this;
+//   checkForMatch();
+// }
 
 let count = 0;
 
-function checkForMatch() {
-  // ternary operator is if/else statement in one line
-  let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-  // condition ? true : false
-  isMatch ? disableCards() : unflipCards();
+// function checkForMatch() {
+//   // ternary operator is if/else statement in one line
+//   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
+//   // condition ? true : false
+//   isMatch ? disableCards() : unflipCards();
 
-  function disableCards() {
-    firstCard.removeEventListener("click", flipCard);
-    secondCard.removeEventListener("click", flipCard);
-    count++;
-    console.log("Function has been called " + count + " times.");
-    if (count === 12) {
-      winGame();
-    }
-    resetBoard();
-  }
+//   function disableCards() {
+//     firstCard.removeEventListener("click", flipCard);
+//     secondCard.removeEventListener("click", flipCard);
+//     count++;
+//     console.log("Function has been called " + count + " times.");
+//     if (count === 12) {
+//       winGame();
+//     }
+//     resetBoard();
+//   }
 
-  function unflipCards() {
-    // lock the board
-    lockBoard = true;
-    setTimeout(() => {
-      firstCard.classList.remove("flip");
-      secondCard.classList.remove("flip");
-      // unlocks board after 1.5 seconds
-      resetBoard();
-    }, 1500);
-    playerLives--;
-    playerLivesCount.textContent = playerLives;
-    if (playerLives === 0)
-      setTimeout(() => {
-        gameOver();
-      }, 500);
-  }
+//   function unflipCards() {
+//     // lock the board
+//     lockBoard = true;
+//     setTimeout(() => {
+//       firstCard.classList.remove("flip");
+//       secondCard.classList.remove("flip");
+//       // unlocks board after 1.5 seconds
+//       resetBoard();
+//     }, 1500);
+//     playerLives--;
+//     playerLivesCount.textContent = playerLives;
+//     if (playerLives === 0)
+//       setTimeout(() => {
+//         gameOver();
+//       }, 500);
+//   }
 
-  function resetBoard() {
-    [hasFlippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
-  }
-}
+//   function resetBoard() {
+//     [hasFlippedCard, lockBoard] = [false, false];
+//     [firstCard, secondCard] = [null, null];
+//   }
+// }
 
 // (function shuffle() {
 //   cards.forEach((card) => {
