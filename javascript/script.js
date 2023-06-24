@@ -1,5 +1,5 @@
-const main = document.createElement("main");
-main.classList.add("memory-game");
+const section = document.createElement("section");
+section.classList.add("memory-game");
 
 const h1 = document.createElement("h1");
 const text1 = document.createTextNode("Lives: ");
@@ -198,10 +198,10 @@ for (let i = 0; i < cards.length; i++) {
     }
   });
 
-  main.appendChild(cardDiv);
+  section.appendChild(cardDiv);
 }
 
-document.body.appendChild(main);
+document.body.appendChild(section);
 
 
 

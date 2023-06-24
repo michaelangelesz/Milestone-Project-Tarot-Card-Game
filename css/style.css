@@ -8,8 +8,8 @@ body {
   height: 100vh;
   background: #74ebd5;
   background: -webkit-linear-gradient(to right, #629cff, #4f8fff);
-  background: linear-gradient(#b3cffd, #4f8fff);
   background-image: url("../images2/planet.png");
+  background: linear-gradient(#b3cffd, #4f8fff);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,16 +23,9 @@ body {
 h1 {
   top: 2rem;
   position: fixed;
-  color: #e87beb;
+  color: #175166;
   text-align: center;
   font-size: 4rem;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    #022e7c 3%,
-    #4f8fff 97%,
-    transparent 100%
-  );
   width: 100%;
   margin: 0;
   display: flex;
