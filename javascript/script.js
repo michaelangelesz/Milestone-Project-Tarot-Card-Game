@@ -191,13 +191,6 @@ for (let i = 0; i < cards.length; i++) {
       } else {
         // The cards do not match
         console.log("No match.");
-        // Flip the cards back after a delay
-        setTimeout(function () {
-          const flippedCardElements = document.querySelectorAll(".flip");
-          flippedCardElements.forEach(function (element) {
-            element.classList.remove("flip");
-          });
-        }, 1000);
       }
 
       // Clear the array for the next pair of flipped cards
