@@ -102,13 +102,14 @@ const h1 = document.createElement('h1');
 const text1 = document.createTextNode('Lives: ');
 const span = document.createElement('span');
 span.classList.add('playerLivesCount');
+span.textContent = '16';
 h1.appendChild(text1);
 h1.appendChild(span);
 
 // Add the h1 to the DOM
 document.body.appendChild(h1);
 
-cards = [
+var cards = [
   { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique", "data-framework": "BBoys" },
   { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique", "data-framework": "BBoys" },
   { imgSrc: "../images2/bjork.jpeg", name: "bjork", alt: "Debut", "data-framework": "Björk" },
@@ -137,7 +138,7 @@ cards = [
 
 for (let i = 0; i < cards.length; i++) {
   const cardDiv = document.createElement("div");
-  cardDiv.classList.add("card"); 
+  cardDiv.classList.add("memory-card"); 
   cardDiv.setAttribute("data-framework", cards[i]["data-framework"]);
   cardDiv.innerHTML = `
   <img class="front-face" src="${cards[i].imgSrc}" alt="${cards[i].alt}">
@@ -147,3 +148,4 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 document.body.appendChild(main);
+
