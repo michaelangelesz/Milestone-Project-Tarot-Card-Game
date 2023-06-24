@@ -12,13 +12,13 @@
     align-items: center;
     flex-direction: column;
     background-position: center center;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: repeat;
     font-family: papyrus;
   }
 
   h1 {
-    top: 3rem;
+    top: 2rem;
     position: fixed;
     color: #e548b6;
     text-align: center;
@@ -35,7 +35,7 @@
     margin-bottom: 11px;
   }
 
-  main {
+  .memory-game {
     top: 11rem;
     position: fixed;
     display: grid;
@@ -47,22 +47,21 @@
     perspective: 1000px;
   }
 
-  .card {
+  .memory-card {
     width: 160px;
     height: 160px;
     position: relative;
     justify-content: center;
     align-items: center;
-    background-image: url("../images2/pink.jpeg");
     background-size: cover;
     background-position: center;
     border-radius: 5px;
     margin: 0;
     margin-bottom: 0;
   }
-
+  
   .front-face,
-.back-face {
+  .back-face {
   position: absolute;
   top: 0;
   left: 0;
