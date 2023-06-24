@@ -1,13 +1,11 @@
-
-
 const main = document.createElement("main");
 main.classList.add("memory-game");
 
-const h1 = document.createElement('h1');
-const text1 = document.createTextNode('Lives: ');
-const span = document.createElement('span');
-span.classList.add('playerLivesCount');
-span.textContent = '16';
+const h1 = document.createElement("h1");
+const text1 = document.createTextNode("Lives: ");
+const span = document.createElement("span");
+span.classList.add("playerLivesCount");
+span.textContent = "16";
 h1.appendChild(text1);
 h1.appendChild(span);
 
@@ -15,31 +13,153 @@ h1.appendChild(span);
 document.body.appendChild(h1);
 
 const cards = [
-  { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique", "data-framework": "BBoys" },
-  { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique", "data-framework": "BBoys" },
-  { imgSrc: "../images2/bjork.jpeg", name: "bjork", alt: "Debut", "data-framework": "Björk" },
-  { imgSrc: "../images2/bjork.jpeg", name: "bjork", alt: "Debut", "data-framework": "Björk" },
-  { imgSrc: "../images2/cure.jpeg", name: "cure", alt: "Three Imaginary Boys", "data-framework": "theCure" },
-  { imgSrc: "../images2/cure.jpeg", name: "cure", alt: "Three Imaginary Boys", "data-framework": "theCure" },
-  { imgSrc: "../images2/doors.jpeg", name: "doors", alt: "Morrison Hotel", "data-framework": "theDoors" },
-  { imgSrc: "../images2/doors.jpeg", name: "doors", alt: "Morrison Hotel", "data-framework": "theDoors" },
-  { imgSrc: "../images2/floyd.jpeg", name: "floyd", alt: "Dark Side Of The Moon", "data-framework": "Floyd" },
-  { imgSrc: "../images2/floyd.jpeg", name: "floyd", alt: "Dark Side Of The Moon", "data-framework": "Floyd" },
-  { imgSrc: "../images2/jimi.jpeg", name: "jimi", alt: "Electric Ladyland", "data-framework": "Jimi" },
-  { imgSrc: "../images2/jimi.jpeg", name: "jimi", alt: "Electric Ladyland", "data-framework": "Jimi" },
-  { imgSrc: "../images2/lusciousj.jpeg", name: "lusciousj", alt: "Fever In Fever Out", "data-framework": "LusciousJ" },
-  { imgSrc: "../images2/lusciousj.jpeg", name: "lusciousj", alt: "Fever In Fever Out", "data-framework": "LusciousJ" },
-  { imgSrc: "../images2/madonna.jpeg", name: "madonna", alt: "Like A Virgin", "data-framework": "Madonna" },
-  { imgSrc: "../images2/madonna.jpeg", name: "madonna", alt: "Like A Virgin", "data-framework": "Madonna" },
-  { imgSrc: "../images2/marley.jpeg", name: "marley", alt: "Legend", "data-framework": "Bob" },
-  { imgSrc: "../images2/marley.jpeg", name: "marley", alt: "Legend", "data-framework": "Bob" },
-  { imgSrc: "../images2/redhot.jpeg", name: "redhot", alt: "One Hot Minute", "data-framework": "RHCP" },
-  { imgSrc: "../images2/redhot.jpeg", name: "redhot", alt: "One Hot Minute", "data-framework": "RHCP" },
-  { imgSrc: "../images2/tribe.jpeg", name: "tribe", alt: "The Low End Theory", "data-framework": "Tribe" },
-  { imgSrc: "../images2/tribe.jpeg", name: "tribe", alt: "The Low End Theory", "data-framework": "Tribe" },
-  { imgSrc: "../images2/u2.jpeg", name: "u2", alt: "The Joshua Tree", "data-framework": "U2" },
-  { imgSrc: "../images2/u2.jpeg", name: "u2", alt: "The Joshua Tree", "data-framework": "U2" },
+  {
+    imgSrc: "../images2/bboys.jpeg",
+    name: "bboys",
+    alt: "Paul's Boutique",
+    "data-framework": "BBoys",
+  },
+  {
+    imgSrc: "../images2/bboys.jpeg",
+    name: "bboys",
+    alt: "Paul's Boutique",
+    "data-framework": "BBoys",
+  },
+  {
+    imgSrc: "../images2/bjork.jpeg",
+    name: "bjork",
+    alt: "Debut",
+    "data-framework": "Björk",
+  },
+  {
+    imgSrc: "../images2/bjork.jpeg",
+    name: "bjork",
+    alt: "Debut",
+    "data-framework": "Björk",
+  },
+  {
+    imgSrc: "../images2/cure.jpeg",
+    name: "cure",
+    alt: "Three Imaginary Boys",
+    "data-framework": "theCure",
+  },
+  {
+    imgSrc: "../images2/cure.jpeg",
+    name: "cure",
+    alt: "Three Imaginary Boys",
+    "data-framework": "theCure",
+  },
+  {
+    imgSrc: "../images2/doors.jpeg",
+    name: "doors",
+    alt: "Morrison Hotel",
+    "data-framework": "theDoors",
+  },
+  {
+    imgSrc: "../images2/doors.jpeg",
+    name: "doors",
+    alt: "Morrison Hotel",
+    "data-framework": "theDoors",
+  },
+  {
+    imgSrc: "../images2/floyd.jpeg",
+    name: "floyd",
+    alt: "Dark Side Of The Moon",
+    "data-framework": "Floyd",
+  },
+  {
+    imgSrc: "../images2/floyd.jpeg",
+    name: "floyd",
+    alt: "Dark Side Of The Moon",
+    "data-framework": "Floyd",
+  },
+  {
+    imgSrc: "../images2/jimi.jpeg",
+    name: "jimi",
+    alt: "Electric Ladyland",
+    "data-framework": "Jimi",
+  },
+  {
+    imgSrc: "../images2/jimi.jpeg",
+    name: "jimi",
+    alt: "Electric Ladyland",
+    "data-framework": "Jimi",
+  },
+  {
+    imgSrc: "../images2/lusciousj.jpeg",
+    name: "lusciousj",
+    alt: "Fever In Fever Out",
+    "data-framework": "LusciousJ",
+  },
+  {
+    imgSrc: "../images2/lusciousj.jpeg",
+    name: "lusciousj",
+    alt: "Fever In Fever Out",
+    "data-framework": "LusciousJ",
+  },
+  {
+    imgSrc: "../images2/madonna.jpeg",
+    name: "madonna",
+    alt: "Like A Virgin",
+    "data-framework": "Madonna",
+  },
+  {
+    imgSrc: "../images2/madonna.jpeg",
+    name: "madonna",
+    alt: "Like A Virgin",
+    "data-framework": "Madonna",
+  },
+  {
+    imgSrc: "../images2/marley.jpeg",
+    name: "marley",
+    alt: "Legend",
+    "data-framework": "Bob",
+  },
+  {
+    imgSrc: "../images2/marley.jpeg",
+    name: "marley",
+    alt: "Legend",
+    "data-framework": "Bob",
+  },
+  {
+    imgSrc: "../images2/redhot.jpeg",
+    name: "redhot",
+    alt: "One Hot Minute",
+    "data-framework": "RHCP",
+  },
+  {
+    imgSrc: "../images2/redhot.jpeg",
+    name: "redhot",
+    alt: "One Hot Minute",
+    "data-framework": "RHCP",
+  },
+  {
+    imgSrc: "../images2/tribe.jpeg",
+    name: "tribe",
+    alt: "The Low End Theory",
+    "data-framework": "Tribe",
+  },
+  {
+    imgSrc: "../images2/tribe.jpeg",
+    name: "tribe",
+    alt: "The Low End Theory",
+    "data-framework": "Tribe",
+  },
+  {
+    imgSrc: "../images2/u2.jpeg",
+    name: "u2",
+    alt: "The Joshua Tree",
+    "data-framework": "U2",
+  },
+  {
+    imgSrc: "../images2/u2.jpeg",
+    name: "u2",
+    alt: "The Joshua Tree",
+    "data-framework": "U2",
+  },
 ];
+
+let flippedCards = [];
 
 for (let i = cards.length - 1; i > 0; i--) {
   const j = Math.floor(Math.random() * (i + 1));
@@ -48,18 +168,35 @@ for (let i = cards.length - 1; i > 0; i--) {
 
 for (let i = 0; i < cards.length; i++) {
   const cardDiv = document.createElement("div");
-  cardDiv.classList.add("memory-card"); 
+  cardDiv.classList.add("memory-card");
   cardDiv.setAttribute("data-framework", cards[i]["data-framework"]);
   cardDiv.innerHTML = `
   <img class="front-face" src="${cards[i].imgSrc}" alt="${cards[i].alt}">
   <img class="back-face" src="../images2/pink.jpeg" alt="card back">
   `;
 
-    // Add event listener to flip the card on click
-    cardDiv.addEventListener("click", function() {
-      cardDiv.classList.toggle("flip");
-    });
-    
+  // Add event listener to flip the card on click
+  cardDiv.addEventListener("click", function () {
+    cardDiv.classList.toggle("flip");
+
+    // Add the data-framework value of the flipped card to the array
+    flippedCards.push(cardDiv.getAttribute("data-framework"));
+
+    // Check for a match if two cards have been flipped
+    if (flippedCards.length === 2) {
+      if (flippedCards[0] === flippedCards[1]) {
+        // The cards match
+        console.log("Match!");
+      } else {
+        // The cards do not match
+        console.log("No match.");
+      }
+
+      // Clear the array for the next pair of flipped cards
+      flippedCards = [];
+    }
+  });
+
   main.appendChild(cardDiv);
 }
 
