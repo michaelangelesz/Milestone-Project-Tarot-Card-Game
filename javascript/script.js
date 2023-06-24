@@ -93,8 +93,21 @@
 
 // 3 cards in a row
 
+
+
 const main = document.createElement("main");
 main.classList.add("memory-game");
+
+const h1 = document.createElement('h1');
+const text1 = document.createTextNode('Lives: ');
+const span = document.createElement('span');
+span.classList.add('playerLivesCount');
+h1.appendChild(text1);
+h1.appendChild(span);
+
+// Add the h1 to the DOM
+document.body.appendChild(h1);
+
 cards = [
   { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique" },
   { imgSrc: "../images2/bboys.jpeg", name: "bboys", alt: "Paul's Boutique" },

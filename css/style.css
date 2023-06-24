@@ -1,101 +1,62 @@
-body {
-  text-align: center;
-  background-image: url("../images/background.jpg");
-  background-position: center center;
-  background-size: 100% auto;
-  background-repeat: repeat;
-  font-family: bouwsma_uncial;
-  height: 100vh;
-  margin: 0;
-  margin-bottom: 7em;
-}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
-h1 {
-  color: rgb(237, 202, 176);
-  text-align: center;
-  background-color: rgb(66, 33, 9);
-  height: 7vh;
-  background: linear-gradient(
-    to right,
-    transparent 0%,
-    rgb(65, 30, 5) 3%,
-    rgb(65, 30, 5) 97%,
-    transparent 100%
-  );
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 11px;
-}
+  body {
+    height: 100vh;
+    background-image: url("../images2/planet.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-position: center center;
+    background-size: 100% auto;
+    background-repeat: repeat;
+    font-family: papyrus;
+  }
 
-h3 {
-  text-align: center;
-  font-size: 20px;
-  letter-spacing: 1.5px;
-  color: rgb(66, 33, 9);
-  justify-content: center;
-  margin: 0;
-  margin-bottom: 22px;
-}
+  h1 {
+    top: 3rem;
+    position: fixed;
+    color: #e548b6;
+    text-align: center;
+    font-size: 4rem;
+    background: linear-gradient(
+      to right,
+      transparent 0%,
+      #02245f 3%,
+      #629cff 97%,
+      transparent 100%
+    );
+    width: 100%;
+    margin: 0;
+    margin-bottom: 11px;
+  }
 
-P {
-  font-family: bouwsma_uncial;
-  font-size: 33px;
-  color: rgb(237, 202, 176);
-  margin-top: 111px;
-}
-
-@font-face {
-  font-family: bouwsma_uncial;
-  src: url(../fonts/bouwsma_uncial/BouwsUnc.ttf);
-}
-
-section {
-  display: flex;
-  justify-content: center;
-}
-
-main {
-  display: grid;
-    grid-template-columns: repeat(6, 11rem);
-    grid-template-rows: repeat(4, 11rem);
-    grid-gap: 1rem;
+  main {
+    top: 11rem;
+    position: fixed;
+    display: grid;
+    grid-template-columns: repeat(6, 10rem);
+    grid-template-rows: repeat(4, 10rem);
+    grid-gap: 1rem; /* add spacing between the cards */
     justify-content: center;
     align-items: center;
     perspective: 1000px;
-}
+  }
 
-.deck {
-  width: 180px;
-  height: 300px;
-  background-image: url("../images/backOfCard.jpg");
-  background-size: cover;
-  background-position: center;
-  border: 4px solid whitesmoke;
-  border-radius: 11px;
-  margin-bottom: 22px;
-  margin-right: -11.3em;
-}
-
-.deck:last-child {
-  margin-right: 0;
-}
-
-.card {
-  width: 180px;
-  height: 300px;
-  font-family: bouwsma_uncial;
-  font-size: 33px;
-  color: rgb(237, 202, 176);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("../images2/cassette.jpeg");
-  background-size: cover;
-  background-position: center;
-  border: 4px solid whitesmoke;
-  border-radius: 10px;
-  margin-right: 22px;
-}
+  .card {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images2/pink.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 0;
+  }
