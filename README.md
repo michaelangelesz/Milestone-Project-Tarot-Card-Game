@@ -10,7 +10,7 @@ I acknowledge the creators and publishers of the Rider Waite Smith Tarot Deck fo
 - Publisher: US Games Systems, Inc.
 - Year: 1909 (first edition)
 
-
+# Several images sourced randomly from [tumblr](tumblr.com) and I do not have source information. If there is an image that belongs to you that you want removed, please let me know.
 
     <!-- my original html 
     <h1>Consult the Cards</h1>
