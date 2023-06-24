@@ -203,6 +203,8 @@ for (let i = 0; i < cards.length; i++) {
 
 document.body.appendChild(main);
 
+
+
 // let intialFlip = false;
 // let hasFlippedCard = false;
 // let lockBoard = false;
@@ -231,7 +233,7 @@ document.body.appendChild(main);
 //   checkForMatch();
 // }
 
-let count = 0;
+// let count = 0;
 
 // function checkForMatch() {
 //   // ternary operator is if/else statement in one line
@@ -280,45 +282,45 @@ let count = 0;
 //   });
 // })();
 
-// show message function
-function showMessage(text, buttonText) {
-  setTimeout(() => {
-    const messageDiv = document.createElement("div");
-    messageDiv.setAttribute("id", "message");
-    messageDiv.textContent = text;
+// // show message function
+// function showMessage(text, buttonText) {
+//   setTimeout(() => {
+//     const messageDiv = document.createElement("div");
+//     messageDiv.setAttribute("id", "message");
+//     messageDiv.textContent = text;
 
-    // create play again button
-    const playAgainBtn = document.createElement("button");
-    playAgainBtn.textContent = buttonText;
-    playAgainBtn.addEventListener("click", () => {
-      newGame();
-      messageDiv.style.opacity = "0";
-      setTimeout(() => {
-        messageDiv.remove();
-      }, 300);
-    });
+//     // create play again button
+//     const playAgainBtn = document.createElement("button");
+//     playAgainBtn.textContent = buttonText;
+//     playAgainBtn.addEventListener("click", () => {
+//       newGame();
+//       messageDiv.style.opacity = "0";
+//       setTimeout(() => {
+//         messageDiv.remove();
+//       }, 300);
+//     });
 
-    // add play again button to message div
-    messageDiv.appendChild(playAgainBtn);
-    document.body.appendChild(messageDiv);
+//     // add play again button to message div
+//     messageDiv.appendChild(playAgainBtn);
+//     document.body.appendChild(messageDiv);
 
-    // animate message div
-    messageDiv.style.opacity = "1";
-  }, 500);
-}
+//     // animate message div
+//     messageDiv.style.opacity = "1";
+//   }, 500);
+// }
 
-function gameOver() {
-  lockBoard = true;
-  showMessage("Bummer! 😵‍💫 You lose!", "Try again");
-}
+// function gameOver() {
+//   lockBoard = true;
+//   showMessage("Bummer! 😵‍💫 You lose!", "Try again");
+// }
 
-function winGame() {
-  showMessage("Awesome! 🤘 You Rock!", "Play again");
-  console.log("Count has reached 12.");
-}
+// function winGame() {
+//   showMessage("Awesome! 🤘 You Rock!", "Play again");
+//   console.log("Count has reached 12.");
+// }
 
-function newGame() {
-  location.reload();
-}
+// function newGame() {
+//   location.reload();
+// }
 
 // cards.forEach((card) => card.addEventListener("click", flipCard));
