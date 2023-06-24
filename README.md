@@ -1,5 +1,5 @@
-# Tarot-Card-Game
-## Rider Waite Smith Tarot Deck history and citation:
+## v1 Tarot-Card-Game
+# Rider Waite Smith Tarot Deck history and citation:
 
 The Rider Waite Smith Tarot Deck is a classic tarot deck first published in 1909 by US Games Systems, Inc. It was created by Arthur Edward Waite, a British occultist and author, and Pamela Colman Smith, an American artist and illustrator. The deck features 78 cards, each with its own unique symbolism and meaning, and is widely used for divination, meditation, and spiritual guidance.
 
@@ -10,9 +10,9 @@ I acknowledge the creators and publishers of the Rider Waite Smith Tarot Deck fo
 - Publisher: US Games Systems, Inc.
 - Year: 1909 (first edition)
 
-# Several images sourced randomly from [tumblr](https://www.tumblr.com/login) and I do not have source information. If there is an image that belongs to you that you want removed, please let me know, and I will promptly remove it.
 
-## Album cover art citations:
+## v2 
+Album cover art citations:
 
 Shatan, Jeremy. Cover art for the Paul's Boutique album by the Beastie Boys. 1989. Record label: Capitol.<br>
 [bboys.jpeg image source](https://beastieboys.com/discography/)
@@ -52,6 +52,33 @@ Averill, Steve. Cover art for The Joshua Tree album by U2. 1987. Record label: I
 
 cassette.jpeg sourced from [here](https://pixabay.com/photos/announcer-audio-neon-cassette-316585/)
 
+
+## v3
+Several images sourced randomly from [tumblr](https://www.tumblr.com/login) and I have attempted to provide source information as accurately as possible. If there is an image here that belongs to you that you want removed, please let me know, and I will promptly remove it.
+
+pink.jpeg sourced from [here](https://www.tumblr.com/zonaurbanz/620770388465549312)
+
 vinyl.jpeg sourced from [here](https://pixabay.com/photos/vinyl-record-player-retro-album-6853859/)
 
 aquamarine.jpeg sourced from [here](https://www.tumblr.com/pwlanier/694256499050037248/aquamarine-shigar-valley-gilgit-baltistan)
+
+rainbow.jpeg sourced from [here](https://www.tumblr.com/d0pe-y0uth/154847900624/loving-someone-the-1975)
+
+bee.jpeg sourced from [here](https://www.tumblr.com/scienceisstrange/115054028949/lush-lepidoptera-1)
+
+trees.jpeg sourced from [here](https://www.tumblr.com/lvndscpe/152777158180/moody-trees-by-kristian-keenen)
+
+cactus.jpeg sourced from [here](https://www.tumblr.com/expressions-of-nature/700419592907096064/arizona-by-blue5011b)
+
+eclipse.jpeg sourced from [here](https://www.tumblr.com/90spurple/61804211245/mexico-eclipse-1991-photo-by-jeffrey-cooper)
+
+flower.jpeg sourced from [here](https://www.tumblr.com/lyxumiasol/714837207231381504)
+
+velveteen.jpeg sourced from [here](https://www.tumblr.com/coquette-club/713692318410178560)
+
+sea.jpeg sourced from [here](https://www.tumblr.com/perspctives/78251280679)
+
+artist.jpeg sourced from [here](https://www.facebook.com/199180286801771/photos/a.199650993421367/933337890052670)
+
+lights.jpeg sourced from [here](https://www.tumblr.com/twerklina/707836877787611136)
+
