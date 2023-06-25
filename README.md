@@ -1,5 +1,5 @@
-# Tarot-Card-Game
-## Rider Waite Smith Tarot Deck history and citation:
+## v1 Tarot-Card-Game
+# Rider Waite Smith Tarot Deck history and citation:
 
 The Rider Waite Smith Tarot Deck is a classic tarot deck first published in 1909 by US Games Systems, Inc. It was created by Arthur Edward Waite, a British occultist and author, and Pamela Colman Smith, an American artist and illustrator. The deck features 78 cards, each with its own unique symbolism and meaning, and is widely used for divination, meditation, and spiritual guidance.
 
