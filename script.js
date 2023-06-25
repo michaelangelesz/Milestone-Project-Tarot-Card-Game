@@ -1,3 +1,29 @@
+// create h1 element
+const h1 = document.createElement("h1");
+h1.textContent = "Consult the Cards";
+
+// create div element
+const div = document.createElement("div");
+
+// create h3 element
+const h3 = document.createElement("h3");
+h3.innerHTML = `
+  Focus on your question.
+  <br />
+  Thoughtfully set your intentions.
+  <br />
+  Click on the deck of cards to shuffle them.
+  <br />
+  Flip each card to reveal your tarot reading...
+`;
+
+// append h3 to div
+div.appendChild(h3);
+
+// append h1 and div to body
+document.body.appendChild(h1);
+document.body.appendChild(div);
+
 const cardsRWS = [
   { name: "The Fool", imgSrc: "../images2/cardsRWS/0_theFool.jpeg", },
   { name: "The Magician", imgSrc: "../images2/cardsRWS/1_theMagician.jpeg", },
