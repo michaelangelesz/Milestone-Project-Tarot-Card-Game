@@ -6,10 +6,10 @@
 
 body {
   height: 100vh;
-  background: #74ebd5;
-  background: -webkit-linear-gradient(to right, #629cff, #4f8fff);
+  background: #a4d0f9;
+  background: -webkit-linear-gradient(to right, #a4d0f9, #3d83ba);
+  background: linear-gradient(#a4d0f9, #3d83ba);
   background-image: url("images2/planet.png");
-  background: linear-gradient(#b3cffd, #4f8fff);
   display: flex;
   justify-content: center;
   align-items: center;
