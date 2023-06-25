@@ -81,6 +81,12 @@ main {
 .card {
   width: 180px;
   height: 300px;
+  font-family: bouwsma_uncial;
+  font-size: 33px;
+  color: rgb(237, 202, 176);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("../images/backOfCard.jpg");
   background-size: cover;
   background-position: center;

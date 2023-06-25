@@ -91,30 +91,14 @@ for (let i = 0; i < 5; i++) {
 document.body.appendChild(section);
 
 
-// create main element
-const mainElement = document.createElement("main");
+// 3 cards in a row
 
-// add "spread" class to main element
-mainElement.classList.add("spread");
+const mainSection = document.createElement("main");
 
-// create three cards with labels
-const cards = ["past", "present", "future"];
-for (let i = 0; i < cards.length; i++) {
-  // create card element
-  const card = document.createElement("div");
-  card.classList.add("card");
-
-  // create label element
-  const label = document.createElement("div");
-  label.classList.add("label");
-  label.textContent = cards[i];
-
-  // append label to card
-  card.appendChild(label);
-
-  // append card to main element
-  mainElement.appendChild(card);
+for (let i = 0; i < 3; i++) {
+  const cardDiv = document.createElement("div");
+  cardDiv.classList.add("card");
+  section.appendChild(cardDiv);
 }
 
-// add main element to the document
-document.body.appendChild(mainElement);
+document.body.appendChild(main);
