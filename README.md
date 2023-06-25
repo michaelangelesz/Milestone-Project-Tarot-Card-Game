@@ -9,3 +9,5 @@ I acknowledge the creators and publishers of the Rider Waite Smith Tarot Deck fo
 - Creator: Arthur Edward Waite (author) and Pamela Colman Smith (artist)
 - Publisher: US Games Systems, Inc.
 - Year: 1909 (first edition)
+
+small edit
