@@ -144,3 +144,12 @@ for (let i = 0; i < cards.length; i++) {
 
 // add main element to the document
 document.body.appendChild(mainElement); 
+
+// add event listener to each card
+const cardElements = document.querySelectorAll(".card");
+cardElements.forEach(card => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+    console.log("Card flipped!");
+  });
+});
