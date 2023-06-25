@@ -5,7 +5,7 @@ const h1 = document.createElement("h1");
 const text1 = document.createTextNode("Lives: ");
 const span = document.createElement("span");
 span.classList.add("playerLivesCount");
-span.textContent = "16";
+span.textContent = "9";
 h1.appendChild(text1);
 h1.appendChild(span);
 
