@@ -117,4 +117,4 @@ for (let i = 0; i < cards.length; i++) {
 }
 
 // add main element to the document
-document.body.appendChild(mainElement);
+document.body.appendChild(mainElement); 
