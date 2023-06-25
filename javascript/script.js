@@ -14,145 +14,145 @@ document.body.appendChild(h1);
 
 const cards = [
   {
-    imgSrc: "../images2/aquamarine.jpeg",
+    imgSrc: "images2/aquamarine.jpeg",
     name: "aquamarine",
     alt: "aquamarine crystal",
     "data-framework": "Aquamarine",
   },
   {
-    imgSrc: "../images2/aquamarine.jpeg",
+    imgSrc: "images2/aquamarine.jpeg",
     name: "aquamarine",
     alt: "aquamarine crystal",
     "data-framework": "Aquamarine",
   },
   {
-    imgSrc: "../images2/artist.jpeg",
+    imgSrc: "images2/artist.jpeg",
     name: "artist",
     alt: "artist",
     "data-framework": "Artist",
   },
   {
-    imgSrc: "../images2/artist.jpeg",
+    imgSrc: "images2/artist.jpeg",
     name: "artist",
     alt: "artist",
     "data-framework": "Artist",
   },
   {
-    imgSrc: "../images2/rainbow.jpeg",
+    imgSrc: "images2/rainbow.jpeg",
     name: "rainbow concert",
     alt: "rainbow concert",
     "data-framework": "Rainbow",
   },
   {
-    imgSrc: "../images2/rainbow.jpeg",
+    imgSrc: "images2/rainbow.jpeg",
     name: "rainbow concert",
     alt: "rainbow concert",
     "data-framework": "Rainbow",
   },
   {
-    imgSrc: "../images2/vinyl.jpeg",
+    imgSrc: "images2/vinyl.jpeg",
     name: "vinyl",
     alt: "a record playing, photographed from above",
     "data-framework": "Vinyl",
   },
   {
-    imgSrc: "../images2/vinyl.jpeg",
+    imgSrc: "images2/vinyl.jpeg",
     name: "vinyl",
     alt: "a record playing, photographed from above",
     "data-framework": "Vinyl",
   },
   {
-    imgSrc: "../images2/bee.jpeg",
+    imgSrc: "images2/bee.jpeg",
     name: "bee",
     alt: "a bee pollinating a flower",
     "data-framework": "Bee",
   },
   {
-    imgSrc: "../images2/bee.jpeg",
+    imgSrc: "images2/bee.jpeg",
     name: "bee",
     alt: "a bee pollinating a flower",
     "data-framework": "Bee",
   },
   {
-    imgSrc: "../images2/lights.jpeg",
+    imgSrc: "images2/lights.jpeg",
     name: "lights",
     alt: "Lights",
     "data-framework": "Lights",
   },
   {
-    imgSrc: "../images2/lights.jpeg",
+    imgSrc: "images2/lights.jpeg",
     name: "lights",
     alt: "Lights",
     "data-framework": "Lights",
   },
   {
-    imgSrc: "../images2/sea.jpeg",
+    imgSrc: "images2/sea.jpeg",
     name: "sea",
     alt: "Sea Date",
     "data-framework": "Sea",
   },
   {
-    imgSrc: "../images2/sea.jpeg",
+    imgSrc: "images2/sea.jpeg",
     name: "sea",
     alt: "Sea Date",
     "data-framework": "Sea",
   },
   {
-    imgSrc: "../images2/trees.jpeg",
+    imgSrc: "images2/trees.jpeg",
     name: "trees",
     alt: "moody trees",
     "data-framework": "Trees",
   },
   {
-    imgSrc: "../images2/trees.jpeg",
+    imgSrc: "images2/trees.jpeg",
     name: "trees",
     alt: "moody trees",
     "data-framework": "Trees",
   },
   {
-    imgSrc: "../images2/cactus.jpeg",
+    imgSrc: "images2/cactus.jpeg",
     name: "cactus",
     alt: "Cactus and moon",
     "data-framework": "Cactus",
   },
   {
-    imgSrc: "../images2/cactus.jpeg",
+    imgSrc: "images2/cactus.jpeg",
     name: "cactus",
     alt: "Cactus and moon",
     "data-framework": "Cactus",
   },
   {
-    imgSrc: "../images2/eclipse.jpeg",
+    imgSrc: "images2/eclipse.jpeg",
     name: "eclipse",
     alt: "solar eclipse",
     "data-framework": "Eclipse",
   },
   {
-    imgSrc: "../images2/eclipse.jpeg",
+    imgSrc: "images2/eclipse.jpeg",
     name: "eclipse",
     alt: "solar eclipse",
     "data-framework": "Eclipse",
   },
   {
-    imgSrc: "../images2/velveteen.jpeg",
+    imgSrc: "images2/velveteen.jpeg",
     name: "velveteen",
     alt: "soft",
     "data-framework": "Velveteen",
   },
   {
-    imgSrc: "../images2/velveteen.jpeg",
+    imgSrc: "images2/velveteen.jpeg",
     name: "velveteen",
     alt: "soft",
     "data-framework": "Velveteen",
   },
   {
-    imgSrc: "../images2/flower.jpeg",
+    imgSrc: "images2/flower.jpeg",
     name: "flower",
     alt: "a pretty flower, close up",
     "data-framework": "flower",
   },
   {
-    imgSrc: "../images2/flower.jpeg",
+    imgSrc: "images2/flower.jpeg",
     name: "flower",
     alt: "a pretty flower, close up",
     "data-framework": "flower",
@@ -173,7 +173,7 @@ for (let i = 0; i < cards.length; i++) {
   cardDiv.setAttribute("data-framework", cards[i]["data-framework"]);
   cardDiv.innerHTML = `
   <img class="front-face" src="${cards[i].imgSrc}" alt="${cards[i].alt}">
-  <img class="back-face" src="../images2/pink.jpeg" alt="card back">
+  <img class="back-face" src="images2/pink.jpeg" alt="card back">
   `;
 
   // Add event listener to flip the card on click
