@@ -50,7 +50,7 @@ P {
 
 @font-face {
   font-family: bouwsma_uncial;
-  src: url(../fonts/bouwsma_uncial/BouwsUnc.ttf);
+  src: url(fonts/bouwsma_uncial/BouwsUnc.ttf);
 }
 
 section {
@@ -61,7 +61,7 @@ section {
 .deck {
   width: 180px;
   height: 300px;
-  background-image: url("../images/backOfCard.jpg");
+  background-image: url("images/backOfCard.jpg");
   background-size: cover;
   background-position: center;
   border: 4px solid #fde9d8;
@@ -89,7 +89,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../images/backOfCard.jpg");
+  background-image: url("images/backOfCard.jpg");
   background-size: cover;
   background-position: center;
   border: 4px solid #fde9d8;
