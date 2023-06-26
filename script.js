@@ -24,6 +24,11 @@ div.appendChild(h3);
 document.body.appendChild(h1);
 document.body.appendChild(div);
 
+// sound effects
+const flipSound = new Audio("images/cardflip.mp3"); 
+flipSound.volume = 0.2;
+flipSound.playbackRate = 2;
+
 const cardsRWS = [
   { name: "The Fool", imgSrc: "images/cardsRWS/0_theFool.jpeg", },
   { name: "The Magician", imgSrc: "images/cardsRWS/1_theMagician.jpeg", },
@@ -111,6 +116,9 @@ const section = document.createElement("section");
 for (let i = 0; i < 5; i++) {
   const deckDiv = document.createElement("div");
   deckDiv.classList.add("deck");
+  deckDiv.addEventListener("click", () => {
+    location.reload();
+  });
   section.appendChild(deckDiv);
 }
 
@@ -151,6 +159,7 @@ cardElements.forEach(card => {
   card.addEventListener("click", () => {
     card.classList.toggle("flipped");
     console.log("Card flipped!");
+    flipSound.play();
     const randomIndex = Math.floor(Math.random() * cardsRWS.length);
     const randomCard = cardsRWS[randomIndex];
     card.style.backgroundImage = `url(${randomCard.imgSrc})`;
